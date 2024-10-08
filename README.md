@@ -7,17 +7,11 @@ This is an example of using [`react-native-bottom-tabs`](https://github.com/okwa
 First, create a custom layout adapter for the native bottom tabs:
 
 ```js
-import {
-  createNativeBottomTabNavigator,
-  // BottomSheetNavigationOptions,
-} from "react-native-bottom-tabs/react-navigation";
-
 import { withLayoutContext } from "expo-router";
+import { createNativeBottomTabNavigator } from "react-native-bottom-tabs/react-navigation";
 
-const { Navigator } = createNativeBottomTabNavigator();
-
-export const Tabs = withLayoutContext<any, typeof Navigator, any, any>(
-  Navigator
+export const Tabs = withLayoutContext(
+  createNativeBottomTabNavigator().Navigator
 );
 ```
 
