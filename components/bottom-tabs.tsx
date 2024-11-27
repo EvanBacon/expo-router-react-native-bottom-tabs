@@ -1,7 +1,4 @@
-import {
-  createNativeBottomTabNavigator,
-  // BottomSheetNavigationOptions,
-} from "react-native-bottom-tabs/react-navigation";
+import { createNativeBottomTabNavigator } from '@bottom-tabs/react-navigation';
 
 import { withLayoutContext } from "expo-router";
 
